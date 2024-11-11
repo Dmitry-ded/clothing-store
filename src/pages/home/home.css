@@ -1,0 +1,30 @@
+.main-home {             
+  display: flex;  
+  background-color: rgb(246, 246, 246);
+  justify-content: center;
+}
+
+.categories-block-product {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+.hats-block {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.hats-block h1{
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.render-hats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1rem;
+}

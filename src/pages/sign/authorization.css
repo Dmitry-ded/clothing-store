@@ -1,0 +1,53 @@
+.main-sign {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.block-sign {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.block-input-sign-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-sign-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-sign-in h2{
+  font-size: 25px;
+  padding: 0 0 1rem;
+}
+
+.input-sign-in-login {
+  border: 1px solid #dadada;
+  margin-bottom: 1rem;
+}
+
+.input-sign-in-pass {
+  border: 1px solid #dadada;
+}
+
+.block-button-sign-in {
+  display: flex;
+}
+
+.button-enter {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #dadada;
+}

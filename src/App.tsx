@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from "react-router";
+import Home from "./pages/home/Home";
+import Cart from './pages/cart/Cart';
+import Favorites from './pages/favorite/Favorites';
+import FullProduct from './pages/fullProduct/FullProduct';
+import Authorization from './pages/sign/Authorization';
+import Catalog from './pages/catalog/Catalog';
+import MainLayout from './layouts/MainLayout';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route path="" element={<Home />}/>
+          <Route path="/cart" element={<Cart />}/>
+          <Route path="/favorites" element={<Favorites />}/>
+          <Route path='/product/:id' element={<FullProduct />} />
+          <Route path='/sign' element={<Authorization />} />
+          <Route path='/catalog' element={<Catalog />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.catalog-products-block {
+  display: grid;               
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px;                   
+  padding: 3rem;               
+}
+
+
+@media (max-width: 1200px) {
+  .catalog-products-block {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 950px) {
+  .catalog-products-block {
+    grid-template-columns: 1fr; 
+  }
+}

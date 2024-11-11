@@ -1,0 +1,124 @@
+.main-product-card {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.product-card-block {
+  display: flex;
+  padding: 3rem; 
+  width: 80%;
+  gap: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .img-product-card-block {
+    display: flex; 
+    flex-direction: column;
+  }
+}
+
+.img-product-card-block {
+  display: flex;
+  gap: 1rem;
+}
+
+.img-product-card-block img {
+  max-width: 500px;
+  border-radius: 8px; 
+}
+
+.product-card-block h2 {
+  font-size: 1.5em; 
+  margin: 10px 0; 
+  color: #333; 
+}
+
+.size-full-prod-block {
+  display: flex;
+  gap: .2rem;
+}
+
+.size-full-product {
+  display: flex;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  min-width: 50px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  color: #E0BEA2;
+  font-weight: 700;
+}
+
+.description-product-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50%;
+}
+
+.active {
+  display: flex;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  min-width: 50px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  color: #E0BEA2;
+  font-weight: 700;
+}
+
+.description-product {
+  font-size: 20px;
+  line-height: 17.44px;
+  padding-top: 2rem;
+}
+
+.price-product-card{
+  font-size: 1.2em; 
+  color: #E0BEA2; 
+
+}
+
+.button-to-add-block {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card-add-to-favorites {
+  display: flex;
+  color: black;
+  border: 1px solid rgb(204, 204, 204);
+  font-size: 16px; 
+  width: 150px;
+  height: 40px;
+  gap: .2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-go-to-favorites {
+  display: flex;
+  color: black;
+  border: 1px solid rgb(204, 204, 204);
+  font-size: 16px; 
+  width: 150px;
+  height: 40px;
+  gap: .2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-add-to-cart {
+  background: #E0BEA2;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  font-weight: 50px;
+}

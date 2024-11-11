@@ -1,0 +1,44 @@
+.main-favorite-block {
+  display: flex;
+  justify-content: space-between;
+}
+.favorite-descriptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-item-img img {
+  width: 400px; 
+  height: 300px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-to-cart {
+  background-color: #E0BEA2; 
+  color: white; 
+  padding: 10px 10px; 
+  font-size: 16px;
+  border-radius: 15px; 
+  transition: background-color 0.3s; 
+}
+
+.add-to-cart:hover {
+  background-color: #E0BEA2; 
+}
+
+.in-cart {
+  background-color: #E0BEA2; 
+  width: 175px;
+  color: white; 
+  padding: 10px 10px; 
+  font-size: 16px;
+  border-radius: 15px; 
+  transition: background-color 0.3s; 
+  text-align: center;
+}

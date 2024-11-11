@@ -1,0 +1,26 @@
+.main-product-block {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.cart-item-img img {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover;
+}
+
+.product-descriptions {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cart-item-count {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-item-name h3{
+  color: rgb(0, 0, 0);
+}
