@@ -1,12 +1,10 @@
 import { useEffect } from 'react'
-import Header from '../../components/header/Header'
 import { useAppDispatch } from '../../redux/store';
 import { useSelector } from 'react-redux';
 import { fetchProducts, selectProductData } from '../../redux/slices/productSlice';
 import { selectFilterSearch } from '../../redux/slices/filterSlice';
 import Skeleton from '../../components/skeleton/Skeleton';
 import ProductBlock from '../../components/productBlock/ProductBlock';
-import Footer from '../../components/footer/Footer';
 import './catalog.css'
 
 const Catalog = () => {

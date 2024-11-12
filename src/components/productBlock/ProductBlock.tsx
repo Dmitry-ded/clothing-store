@@ -6,7 +6,6 @@ import { IoMdHeart } from "react-icons/io";
 import { addProductsFavorites, removeFromFavorites, selectFavoritesItemsById } from '../../redux/slices/favoritesSlice';
 import { Link } from 'react-router-dom';
 
-
 type ProductBlockProps ={
   name: string,
   imageUrl: string,

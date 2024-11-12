@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../../components/header/Header'
 import { useNavigate, useParams } from 'react-router';
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
@@ -9,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addProducts } from '../../redux/slices/cartSlice';
 import { addProductsFavorites, selectFavoritesItemsById } from '../../redux/slices/favoritesSlice';
 import { Link } from 'react-router-dom';
-import Footer from '../../components/footer/Footer';
 
 type FullProductState = {
   id: string,

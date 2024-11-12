@@ -51,9 +51,6 @@ const Header: React.FC = () => {
           <Link to={`/catalog`}>
             <p>Каталог</p>
           </Link>
-          <p>О нас</p>
-          <p>SALE</p>
-          <p>Магазины</p>
         </div>
         <div className="icon-slogan">
           <Link to='/'>

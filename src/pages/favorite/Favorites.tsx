@@ -1,10 +1,8 @@
 import React from 'react'
-import Header from '../../components/header/Header'
 import { useSelector } from 'react-redux'
 import FavoritesProductBlock from '../../components/favoritesProductBlock/FavoritesProductBlock';
 import './favorites.css'
 import { selectProductFavorite } from '../../redux/slices/favoritesSlice';
-import Footer from '../../components/footer/Footer';
 
 const Favorites: React.FC = () => {
 

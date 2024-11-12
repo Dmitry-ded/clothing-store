@@ -3,7 +3,7 @@ import './favoritesProductBlock.css'
 import { IoMdHeart } from "react-icons/io";
 import { useDispatch } from 'react-redux';
 import { removeFromFavorites } from '../../redux/slices/favoritesSlice';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 type FavoritesProductBlockProps = {
   id: string,
@@ -17,8 +17,6 @@ type FavoritesProductBlockProps = {
 const FavoritesProductBlock: React.FC<FavoritesProductBlockProps> = ( { id, name, imageUrl, imageUrlHover, price, size } ) => {
 
   const dispatch = useDispatch();
-
-  const navigate = useNavigate();
 
   const [isHoveredImage, setIsHoveredImage] = useState(false);
 

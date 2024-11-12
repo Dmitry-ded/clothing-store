@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
-import Header from '../../components/header/Header'
 import './home.css'
 import { useSelector } from 'react-redux'
 import { fetchProducts, selectProductData } from '../../redux/slices/productSlice'
 import { useAppDispatch } from '../../redux/store'
 import ProductBlock from '../../components/productBlock/ProductBlock'
 import Skeleton from '../../components/skeleton/Skeleton'
-import Footer from '../../components/footer/Footer'
+
 
 const Home: React.FC = () => {
 

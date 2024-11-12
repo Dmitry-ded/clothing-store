@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../../components/header/Header'
 import { useDispatch, useSelector } from 'react-redux'
 import "./cart.css"
 import CartProductBlock from '../../components/cartProductBlock/CartProductBlock'
 import { FaRegTrashCan } from "react-icons/fa6";
 import { clearProduct, selectCart } from '../../redux/slices/cartSlice'
 import { Link } from 'react-router-dom'
-import Footer from '../../components/footer/Footer'
 
 const Cart: React.FC = () => {
 
