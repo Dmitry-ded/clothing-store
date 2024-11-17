@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './productblock.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { IoMdHeartEmpty } from "react-icons/io";

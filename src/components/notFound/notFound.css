@@ -1,0 +1,12 @@
+.main-notFound {
+  text-align: center;
+  padding: 100px;
+  margin: 0 auto;
+}
+.main-notFound p{
+  font-size: 18px;
+}
+
+.main-notFound span{
+  font-size: 64px;
+}

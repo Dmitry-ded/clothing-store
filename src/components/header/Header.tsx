@@ -2,7 +2,8 @@ import icon from '../../assets/img/logo.svg';
 import { BsCart2 } from "react-icons/bs";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
-import { LuUser2 } from "react-icons/lu";
+import { FiUser } from "react-icons/fi";
+import { FiUserCheck } from "react-icons/fi";
 import './header.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -10,6 +11,7 @@ import { selectCart } from '../../redux/slices/cartSlice';
 import { selectFavoritesTotalCount, selectProductFavorite } from '../../redux/slices/favoritesSlice';
 import Search from '../search/Search';
 import { useEffect, useRef } from 'react';
+import { useAuth } from '../../hooks/useAuth';
 
 
 const Header: React.FC = () => {
@@ -23,6 +25,8 @@ const Header: React.FC = () => {
   const totalCountFavorites = useSelector(selectFavoritesTotalCount)
 
   const { productsFavorite } = useSelector(selectProductFavorite);
+
+  const { isAuth } = useAuth();
 
   const totalCount = products.reduce((sum: number, item: any) => sum + item.count, 0)
 
@@ -72,9 +76,17 @@ const Header: React.FC = () => {
             <BsCart2 size="24" />
             {totalCount}
           </Link>
-          <Link to='/sign' className='color-icon'>
-            <LuUser2 size="24" />
-          </Link>
+          {
+            isAuth
+            ?
+            (<Link to='/profile' className='color-icon'>
+              <FiUserCheck size="24" />
+            </Link>)
+            :
+            (<Link to='/login' className='color-icon'>
+              <FiUser size="24" />
+            </Link>)
+          }
         </div>
       </div>
     </div>

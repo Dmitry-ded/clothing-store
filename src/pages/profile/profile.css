@@ -1,0 +1,28 @@
+.main-profile {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+.profile-information-block {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 2rem 0 2rem 0;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-block {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-contact-information {
+  border: 1px solid #252525;
+  padding: 1rem;
+}

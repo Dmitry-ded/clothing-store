@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { store } from './redux/store'
 import { Provider } from 'react-redux';
 import './index.css';
+import './firebase'
 
 const rootElem = document.getElementById('root')
 

@@ -1,0 +1,12 @@
+.main-form {
+  display: flex;
+
+}
+
+.main-form input {
+  border: 1px solid gray;
+}
+
+.main-form button {
+  border: 1px solid rgb(245, 0, 0);
+}

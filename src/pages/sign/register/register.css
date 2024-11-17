@@ -1,0 +1,10 @@
+.main-register {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+
+}
+
+.main-register h1{
+  font-size: 30px;
+}

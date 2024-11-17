@@ -5,12 +5,17 @@ import { fetchProducts, selectProductData } from '../../redux/slices/productSlic
 import { useAppDispatch } from '../../redux/store'
 import ProductBlock from '../../components/productBlock/ProductBlock'
 import Skeleton from '../../components/skeleton/Skeleton'
+import { useAuth } from '../../hooks/useAuth'
+import { removeUser } from '../../redux/slices/userSlice'
+import { useNavigate } from 'react-router-dom'
 
 
 const Home: React.FC = () => {
 
   const dispatch = useAppDispatch();
   const { products, status } = useSelector(selectProductData);
+
+  const {isAuth, email} = useAuth();
 
   useEffect(() => {
     dispatch(fetchProducts())
@@ -65,6 +70,15 @@ const Home: React.FC = () => {
     <div>
       <div className='main-home'>
         <div className="categories-block-product">
+          {
+            isAuth 
+            ? (
+              <div>
+                <button style={{border: "1px solid red"}} onClick={() => dispatch(removeUser())}>Разлогиниться--{email}</button>
+              </div>
+            )
+            : <div>Не авторизован</div>
+          }
           <div className="hats-block">
             <h1>Головные уборы</h1>
             <div className="render-hats">

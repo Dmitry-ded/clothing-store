@@ -1,0 +1,10 @@
+.main-login {
+  display: flex;
+  padding: 10rem;
+  flex-direction: column;
+
+}
+
+.main-login h1{
+  font-size: 30px;
+}
