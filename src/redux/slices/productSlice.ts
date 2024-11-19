@@ -32,6 +32,7 @@ const initialState: ItemsSliceState = {
 export const fetchProducts = createAsyncThunk<ProductItem[]>(
   `product/fetchProductsStatus`,
   async () => {
+    // https://66e9e82987e41760944b0db3.mockapi.io/items?page=1&limit=4
     const { data } = await axios.get<ProductItem[]>(`https://66e9e82987e41760944b0db3.mockapi.io/items`);
     return data
   },
